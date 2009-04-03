@@ -3,5 +3,5 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'	=> 'Tie::Counter',
-    'VERSION_FROM' => 'Counter.pm', # finds $VERSION
+    'VERSION_FROM' => 'lib/Tie/Counter.pm', # finds $VERSION
 );

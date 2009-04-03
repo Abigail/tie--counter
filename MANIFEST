@@ -1,4 +1,4 @@
-Counter.pm
+lib/Tie/Counter.pm
 MANIFEST
 Makefile.PL
-test.pl
+t/000_tests.t
