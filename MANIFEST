@@ -1,4 +1,6 @@
 lib/Tie/Counter.pm
+Changes
+README
 MANIFEST
 Makefile.PL
 t/000_tests.t
