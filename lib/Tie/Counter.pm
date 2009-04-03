@@ -1,19 +1,12 @@
 package Tie::Counter;
 
-#
-# $Id: Counter.pm,v 1.1 1999/07/20 03:03:06 abigail Exp abigail $
-#
-# $Log: Counter.pm,v $
-# Revision 1.1  1999/07/20 03:03:06  abigail
-# Initial revision
-#
-#
+use 5.006;
 
 use strict;
+use warnings;
+no  warnings 'syntax';
 
-use vars qw /$VERSION/;
-
-$VERSION = '$Revision: 1.1 $' =~ /([\d.]+)/;
+our $VERSION = '2009040301';
 
 
 sub TIESCALAR {
@@ -56,8 +49,6 @@ Tie::Counter - Have a counter in a scalar.
         print "  $counter  $colour\n";      #   0  Red
     }                                       #   1  Green
                                             #   2  Blue
-    
-
 =head1 DESCRIPTION
 
 C<Tie::Counter> allows you to tie a scalar in such a way that it increments
@@ -68,23 +59,34 @@ The tie takes an optional extra argument, the first value of the counter,
 defaulting to 0. Any argument for which magical increment is defined on 
 is allowed. Assigning to the counter will set a new value.
 
-=head1 REVISION HISTORY
-
-    $Log: Counter.pm,v $
-    Revision 1.1  1999/07/20 03:03:06  abigail
-    Initial revision
-
+=head1 DEVELOPMENT
+ 
+The current sources of this module are found on github,
+L<< git://github.com/Abigail/tie--counter.git >>.
 
 =head1 AUTHOR
-
-This package was written by Abigail.
+    
+Abigail L<< <test-regexp@abigail.be> >>.
 
 =head1 COPYRIGHT and LICENSE
 
-This package is copyright 1999 by Abigail.
+Copyright (C) 1999, 2009 by Abigail
 
-This program is free and open software. You may use, copy, modify,
-distribute and sell this program (and any modified variants) in any way
-you wish, provided you do not restrict others to do the same.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-=cut
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
