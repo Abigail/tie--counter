@@ -6,7 +6,7 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2009040301';
+our $VERSION = '2009040601';
 
 
 sub TIESCALAR {
