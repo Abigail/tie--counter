@@ -49,6 +49,7 @@ Tie::Counter - Have a counter in a scalar.
         print "  $counter  $colour\n";      #   0  Red
     }                                       #   1  Green
                                             #   2  Blue
+
 =head1 DESCRIPTION
 
 C<Tie::Counter> allows you to tie a scalar in such a way that it increments

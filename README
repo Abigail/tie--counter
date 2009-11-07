@@ -12,8 +12,8 @@ SYNOPSIS
             print "  $counter  $colour\n";      #   0  Red
         }                                       #   1  Green
                                                 #   2  Blue
-    =head1 DESCRIPTION
 
+DESCRIPTION
     "Tie::Counter" allows you to tie a scalar in such a way that it
     increments each time it is used. This might be useful for interpolating
     counters in strings.
